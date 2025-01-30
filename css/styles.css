@@ -3,7 +3,7 @@
   --color-primary-light: #374723;
   --color-secondary: #606c38;
   --color-secondary-light: #79864c;
-  --color-accent: #bc6c25;
+  --color-accent: #ff9800;
   --color-accent-light: #d48036;
   --color-headings: #1d270f;
   --color-body: #57554d;
@@ -177,10 +177,6 @@ a {
   height: 32px;
 }
 
-.icon--primary {
-  fill: var(--color-primary);
-}
-
 .icon--white {
   fill: white;
 }
@@ -199,6 +195,18 @@ a {
   width: 64px;
 }
 
+.icon--primary {
+  background-color: var(--color-primary);
+}
+
+.icon--secondary {
+  background-color: var(--color-secondary);
+}
+
+.icon--accent {
+  background-color: var(--color-accent);
+}
+
 .icon-container--accent {
   background-color: var(--color-accent);
 }
@@ -210,7 +218,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   transition: background-color 0.15s;
@@ -304,6 +312,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -535,6 +544,7 @@ a {
 /* Callouts */
 .callout {
   padding: 4rem;
+  border-radius: 30px;
 }
 
 .callout--primary {
@@ -643,6 +653,10 @@ a {
 }
 
 /* Navigation Bar */
+.navbar {
+  background-color: #000;
+}
+
 .nav {
   background-color: #000;
   display: flex;
@@ -668,7 +682,7 @@ a {
 }
 
 .nav__item > a:hover {
-  color: #fff;
+  color: var(--color-accent);
 }
 
 .nav__toggler {
@@ -680,6 +694,10 @@ a {
 .nav.collapsible--expanded .nav__toggler {
   box-shadow: 0 0 0 3px #666;
   opacity: 1;
+}
+
+.nav .logo__image {
+  max-height: 8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -734,13 +752,20 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--color-headings);
+}
+
+@media screen and (min-width: 480px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -764,6 +789,7 @@ a {
 .feature {
   gap: 4rem;
   margin: 12rem 0;
+  align-items: center;
 }
 
 .feature:first-of-type {
