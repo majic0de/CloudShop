@@ -174,7 +174,7 @@
           <a href="#" class="link link-arrow">Learn More</a>
         </div>
 
-        <picture data-aos="zoom-in-left">
+        <picture data-aos="zoom-in-left" class="feature-image__container">
           <source
             type="image/webp"
             srcset="images/feature_1.webp 1x, images/feature_1@2x.webp 2x"
@@ -203,7 +203,7 @@
           <a href="#" class="link link-arrow">Learn More</a>
         </div>
 
-        <picture data-aos="fade-right">
+        <picture data-aos="fade-right" class="feature-image__container">
           <source
             type="image/webp"
             srcset="images/feature_2.webp 1x, images/feature_2@2x.webp 2x"
@@ -215,6 +215,58 @@
           <img src="images/feature_2@2x.png" alt="" class="feature__image" />
         </picture>
       </article>
+    </section>
+    <section class="block block--dark block--skewed-right feature-media">
+      <div class="container">
+        <header class="block__header">
+          <h2 class="block__heading">User-friendly Control Panel</h2>
+        </header>
+        <div class="grid grid--1x2">
+          <div class="media__container">
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Manage Updates</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Accusantium debitis necessitatibus reprehenderit sint enim ex
+                  alias. Cumque accusamus quam reprehenderit.
+                </p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#settings"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Accusantium debitis necessitatibus reprehenderit sint enim ex
+                  alias. Cumque accusamus quam reprehenderit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <picture class="feature-media__image" data-aos="fade-right">
+            <source
+              type="image/webp"
+              srcset="images/feature_2.webp 1x, images/feature_2@2x.webp 2x"
+            />
+            <source
+              type="image/png"
+              srcset="images/feature_2.png 1x, images/feature_2@2x.png 2x"
+            />
+            <img src="images/feature_2@2x.png" alt="" class="feature__image" />
+          </picture>
+        </div>
+      </div>
     </section>
     <section class="block container">
       <header class="block__header">
@@ -278,54 +330,60 @@
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 1</h2>
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Section 1</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron-down"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li class="list__item"><a href="#">item 1</a></li>
-              <li class="list__item"><a href="#">item 1</a></li>
-              <li class="list__item"><a href="#">item 1</a></li>
+              <li class="list__item"><a href="#">item 2</a></li>
+              <li class="list__item"><a href="#">item 3</a></li>
+              <li class="list__item"><a href="#">item 4</a></li>
+              <li class="list__item"><a href="#">item 5</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 1</h2>
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Section 2</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron-down"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li class="list__item"><a href="#">item 1</a></li>
-              <li class="list__item"><a href="#">item 1</a></li>
-              <li class="list__item"><a href="#">item 1</a></li>
+              <li class="list__item"><a href="#">item 2</a></li>
+              <li class="list__item"><a href="#">item 3</a></li>
+              <li class="list__item"><a href="#">item 4</a></li>
+              <li class="list__item"><a href="#">item 5</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 1</h2>
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Section 3</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron-down"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li class="list__item"><a href="#">item 1</a></li>
-              <li class="list__item"><a href="#">item 1</a></li>
-              <li class="list__item"><a href="#">item 1</a></li>
+              <li class="list__item"><a href="#">item 2</a></li>
+              <li class="list__item"><a href="#">item 3</a></li>
+              <li class="list__item"><a href="#">item 4</a></li>
+              <li class="list__item"><a href="#">item 5</a></li>
             </ul>
           </div>
         </section>
-        <section class="footer__brand">
+        <div class="footer__brand">
           <img src="images/logo.svg" alt="" />
           <p class="footer__copyright">Copyright 2024 Masoud Majidi</p>
-        </section>
+        </div>
       </div>
     </footer>
     <script src="js/main.js"></script>
