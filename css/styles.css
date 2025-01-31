@@ -1,3 +1,5 @@
+@import url(./normalize.css);
+
 :root {
   --color-primary: #283618;
   --color-primary-light: #374723;
