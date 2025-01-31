@@ -705,6 +705,8 @@ a {
 
 .nav .logo__image {
   max-height: 8rem;
+  height: 8rem;
+  padding: 1rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -729,6 +731,9 @@ a {
 /* Hero */
 .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
+  background-size: cover;
+  background-position: top;
 }
 
 .hero__tagline {
