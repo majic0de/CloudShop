@@ -1,0 +1,44 @@
+.quote {
+  font-size: 2.4rem;
+  font-style: italic;
+  color: darken($color-body, 20%);
+  line-height: 1.3;
+
+  &__text {
+    &::before {
+      content: "“";
+    }
+
+    &::after {
+      content: "”";
+    }
+  }
+
+  &__author {
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+  }
+
+  &__company {
+    color: $color-headings;
+    opacity: 0.4;
+    font-size: 2rem;
+    font-style: normal;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+
+    &__author {
+      font-size: 2.4rem;
+    }
+
+    &__company {
+      font-size: 1.6rem;
+    }
+  }
+}

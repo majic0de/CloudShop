@@ -1,0 +1,16 @@
+.input-group {
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  display: flex;
+
+  .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 2rem;
+    width: 0;
+  }
+
+  .btn {
+    margin: 4px;
+  }
+}

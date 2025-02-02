@@ -1,0 +1,28 @@
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+
+  &__header,
+  &__body {
+    padding: 2rem 3rem;
+  }
+
+  &--primary {
+    .card__header {
+      background-color: $color-primary;
+      color: white;
+    }
+  }
+
+  &--secondary {
+    .card__header {
+      background-color: $color-secondary;
+      color: white;
+    }
+
+    .badge--secondary {
+      background-color: lighten($color-secondary, 10%);
+    }
+  }
+}

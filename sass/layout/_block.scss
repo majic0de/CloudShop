@@ -1,0 +1,42 @@
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.block {
+  $padding-vertical: 6rem;
+
+  padding: $padding-vertical 2rem;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__heading {
+    margin-top: 0;
+  }
+
+  &--dark {
+    background-color: #000;
+    color: #7b858b;
+
+    .media__title {
+      color: #fff;
+    }
+
+    .block__heading {
+      color: white;
+    }
+  }
+
+  &--skewed-right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    padding-bottom: calc(#{$padding-vertical} + 4rem);
+  }
+
+  &--skewed-left {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    padding-bottom: calc(#{$padding-vertical} + 4rem);
+  }
+}

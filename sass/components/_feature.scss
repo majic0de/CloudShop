@@ -1,0 +1,27 @@
+.feature {
+  gap: 4rem;
+  margin: 12rem 0;
+  align-items: center;
+
+  &:first-of-type {
+    margin-top: 6rem;
+  }
+
+  &__heading {
+    margin: 1rem 0;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}
+
+.feature-image__container {
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}

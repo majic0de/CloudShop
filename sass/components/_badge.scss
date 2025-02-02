@@ -1,0 +1,32 @@
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+
+  &--primary {
+    background-color: $color-primary;
+    color: white;
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    color: white;
+  }
+
+  &--small {
+    font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+
+    &--small {
+      font-size: 1.2rem;
+    }
+  }
+}
