@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@include respond(tab-port) {
   .nav {
     &__list {
       display: flex;

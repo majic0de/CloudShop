@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@include respond(tab-land) {
   .btn {
     font-size: 1.5rem;
   }

@@ -27,10 +27,8 @@
     font-size: 2rem;
     font-style: normal;
   }
-}
 
-@media screen and (min-width: 1024px) {
-  .quote {
+  @include respond(tab-land) {
     font-size: 2rem;
 
     &__author {

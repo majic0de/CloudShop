@@ -13,10 +13,8 @@
   &:hover::after {
     margin-left: 10px;
   }
-}
 
-@media screen and (min-width: 1024px) {
-  .link-arrow {
+  @include respond(tab-land) {
     font-size: 1.5rem;
   }
 }

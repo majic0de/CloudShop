@@ -17,10 +17,10 @@
       margin-bottom: 1rem;
     }
   }
-}
 
-@media screen and (min-width: 1024px) {
-  .list--inline .list__item {
-    padding-left: 0;
+  @include respond(tab-land) {
+    &--inline &__item {
+      padding-left: 0;
+    }
   }
 }

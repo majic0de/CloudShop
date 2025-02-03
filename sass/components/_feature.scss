@@ -14,14 +14,14 @@
   &__image {
     max-width: 100%;
   }
+
+  @include respond(tab-port) {
+    &:nth-of-type(even) &__content {
+      order: 2;
+    }
+  }
 }
 
 .feature-image__container {
   justify-self: center;
-}
-
-@media screen and (min-width: 768px) {
-  .feature:nth-of-type(even) .feature__content {
-    order: 2;
-  }
 }

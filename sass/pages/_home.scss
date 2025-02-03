@@ -17,7 +17,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@include respond(tab-port) {
   .hero__content {
     text-align: left;
     align-self: center;
@@ -45,13 +45,13 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@include respond(phone) {
   .block-domain__prices {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media screen and (min-width: 768px) {
+@include respond(tab-port) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-template-rows: 1fr;
@@ -75,7 +75,7 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
-@media screen and (min-width: 768px) {
+@include respond(tab-port) {
   .feature-media__image {
     order: -1;
   }
@@ -100,7 +100,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@include respond(tab-port) {
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;

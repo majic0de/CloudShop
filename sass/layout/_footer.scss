@@ -42,7 +42,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@include respond(tab-port) {
   .footer {
     &__sections {
       grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));

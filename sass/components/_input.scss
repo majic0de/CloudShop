@@ -5,14 +5,12 @@
   outline: 0;
   color: $color-headings;
   font-size: 2rem;
+
+  @include respond(tab-land) {
+    font-size: 1.5rem;
+  }
 }
 
 ::placeholder {
   color: #57554d;
-}
-
-@media screen and (min-width: 1024px) {
-  .input {
-    font-size: 1.5rem;
-  }
 }
