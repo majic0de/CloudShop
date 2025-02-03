@@ -7,6 +7,7 @@ CloudShop is a cloud hosting service that allows you to deploy your websites. Th
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Development](#development)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -14,6 +15,7 @@ CloudShop is a cloud hosting service that allows you to deploy your websites. Th
 
 - Responsive design
 - Animated sections using AOS (Animate On Scroll)
+- Various UI components like buttons, badges, cards, Collapsible, and more
 
 ## Installation
 
@@ -29,13 +31,40 @@ CloudShop is a cloud hosting service that allows you to deploy your websites. Th
    cd CloudShop
    ```
 
-3. Open `index.html` in your preferred web browser to view the website.
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Compile the Sass files:
+
+   ```bash
+   npm run Sass Compile
+   ```
 
 ## Usage
 
+- Open `index.html` in your preferred web browser to view the website.
 - Navigate through the different sections of the website to explore the features and hosting plans.
 - Use the domain search functionality to check the availability of domains.
 - Click on the "Get Started" button to begin your cloud hosting journey.
+
+## Development
+
+To start development, you can use the following tasks defined in the `.vscode/tasks.json` file:
+
+- Install dependencies:
+
+  ```bash
+  npm run install
+  ```
+
+- Compile Sass files:
+
+  ```bash
+  npm run Sass Compile
+  ```
 
 ## Contributing
 
