@@ -1,7 +1,9 @@
+@use "../abstracts" as *;
+
 .quote {
   font-size: 2.4rem;
   font-style: italic;
-  color: darken($color-body, 20%);
+  color: shade($color-body, 20%);
   line-height: 1.3;
 
   &__text {

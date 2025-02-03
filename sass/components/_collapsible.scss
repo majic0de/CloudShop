@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .collapsible {
   &__header {
     display: flex;

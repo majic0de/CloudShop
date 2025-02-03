@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .input-group {
   border: 1px solid $color-border;
   border-radius: $border-radius;
